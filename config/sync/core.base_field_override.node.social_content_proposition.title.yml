@@ -1,0 +1,18 @@
+uuid: 9469ed9e-2ca7-4a18-9e2b-2642fc0d6128
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_content_proposition
+id: node.social_content_proposition.title
+field_name: title
+entity_type: node
+bundle: social_content_proposition
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,47 @@
+telegram_assistant.settings:
+  path: '/admin/config/services/telegram-assistant'
+  defaults:
+    _form: '\Drupal\telegram_assistant\Form\TelegramAssistantSettingsForm'
+    _title: 'Telegram Assistant Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+telegram_assistant.webhook:
+  path: '/telegram/webhook'
+  defaults:
+    _controller: '\Drupal\telegram_assistant\Controller\TelegramWebhookController::handle'
+    _title: 'Telegram Webhook'
+  requirements:
+    _access: 'TRUE'
+
+entity.telegram_bot.collection:
+  path: '/admin/config/services/telegram-assistant/bots'
+  defaults:
+    _entity_list: 'telegram_bot'
+    _title: 'Telegram Bots'
+  requirements:
+    _permission: 'administer telegram_assistant'
+
+entity.telegram_bot.add_form:
+  path: '/admin/config/services/telegram-assistant/bots/add'
+  defaults:
+    _entity_form: 'telegram_bot.add'
+    _title: 'Add Telegram Bot'
+  requirements:
+    _permission: 'administer telegram_assistant'
+
+entity.telegram_bot.edit_form:
+  path: '/admin/config/services/telegram-assistant/bots/{telegram_bot}'
+  defaults:
+    _entity_form: 'telegram_bot.edit'
+    _title: 'Edit Telegram Bot'
+  requirements:
+    _permission: 'administer telegram_assistant'
+
+entity.telegram_bot.delete_form:
+  path: '/admin/config/services/telegram-assistant/bots/{telegram_bot}/delete'
+  defaults:
+    _entity_form: 'telegram_bot.delete'
+    _title: 'Delete Telegram Bot'
+  requirements:
+    _permission: 'administer telegram_assistant'

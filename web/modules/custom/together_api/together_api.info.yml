@@ -1,0 +1,5 @@
+name: 'Together API Integration'
+type: module
+description: 'Together API Integration'
+package: Custom
+core_version_requirement: ^10 || ^11

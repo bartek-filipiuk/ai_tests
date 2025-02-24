@@ -1,0 +1,8 @@
+services:
+  ai_page_generator.paragraph_field_manager:
+    class: Drupal\ai_page_generator\ParagraphFieldManager
+    arguments: ['@entity_type.manager', '@entity_field.manager']
+
+  ai_page_generator.batch_process:
+    class: Drupal\ai_page_generator\BatchProcess
+    arguments: ['@ai_page_generator.paragraph_field_manager']

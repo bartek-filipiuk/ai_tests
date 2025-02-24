@@ -1,0 +1,22 @@
+uuid: 0b064cb1-3d0b-49f2-8951-ec5da9591b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_content_proposition
+id: node.social_content_proposition.status
+field_name: status
+entity_type: node
+bundle: social_content_proposition
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,7 @@
+make_scenarios.form:
+  path: '/make-scenarios/form'
+  defaults:
+    _form: '\Drupal\make_scenarios\Form\MakeScenarioForm'
+    _title: 'Make Scenario Form'
+  requirements:
+    _permission: 'access content'

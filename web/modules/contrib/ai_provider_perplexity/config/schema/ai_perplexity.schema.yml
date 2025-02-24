@@ -1,0 +1,54 @@
+ai_perplexity.settings:
+  type: config_object
+  label: 'AI Perplexity settings'
+  mapping:
+    api_key:
+      type: string
+      label: 'API Key'
+    default_model:
+      type: string
+      label: 'Default Model'
+    temperature:
+      type: float
+      label: 'Temperature'
+    top_p:
+      type: float
+      label: 'Top P'
+    max_tokens:
+      type: integer
+      label: 'Max Tokens'
+    request_timeout:
+      type: integer
+      label: 'Request Timeout'
+    max_retries:
+      type: integer
+      label: 'Maximum Retries'
+    retry_delay:
+      type: integer
+      label: 'Retry Delay (ms)'
+
+ai.provider.perplexity:
+  type: ai_provider.plugin
+  label: 'Perplexity provider settings'
+  mapping:
+    model:
+      type: string
+      label: 'Model'
+    temperature:
+      type: float
+      label: 'Temperature'
+    top_p:
+      type: float
+      label: 'Top P'
+    max_tokens:
+      type: integer
+      label: 'Max Tokens'
+    request_timeout:
+      type: integer
+      label: 'Request Timeout'
+    max_retries:
+      type: integer
+      label: 'Maximum Retries'
+    retry_delay:
+      type: integer
+      label: 'Retry Delay (ms)'

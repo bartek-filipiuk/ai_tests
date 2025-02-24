@@ -1,0 +1,78 @@
+.receipt-upload-block {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.receipt-upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.receipt-upload-preview {
+  width: 100%;
+  min-height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.receipt-upload-preview img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.receipt-upload-button .button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #0078d4;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.receipt-upload-button .button:hover {
+  background: #005a9e;
+}
+
+.receipt-submit-button {
+  padding: 12px 24px;
+  background: #107c10;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.receipt-submit-button:hover:not(:disabled) {
+  background: #0b5a0b;
+}
+
+.receipt-submit-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.receipt-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}

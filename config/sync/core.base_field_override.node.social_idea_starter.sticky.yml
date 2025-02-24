@@ -1,0 +1,22 @@
+uuid: 17a3848a-d091-4a75-bc57-05b74388759d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_idea_starter
+id: node.social_idea_starter.sticky
+field_name: sticky
+entity_type: node
+bundle: social_idea_starter
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

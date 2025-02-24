@@ -1,0 +1,5 @@
+name: 'Salad Transcription API Integration'
+type: module
+description: 'Salad Transcription API Integration'
+package: Custom
+core_version_requirement: ^10 || ^11

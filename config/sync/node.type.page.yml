@@ -1,0 +1,13 @@
+uuid: 71b54035-f395-47f8-834b-dcd2680e38f0
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i0snV8Wj--OkRW12UdachUiYiz3FbeMwHu_pZYfzKLc
+name: 'Prosta strona'
+type: page
+description: "Użyj <em>prostych stron</em> dla Twoich statycznych treści, takich jak strona 'O nas'."
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

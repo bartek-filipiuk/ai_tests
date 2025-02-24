@@ -1,0 +1,11 @@
+uuid: 186d1b53-96b6-459b-ba17-68e0165438a6
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.dokumentacja
+id: node.dokumentacja
+target_entity_type_id: node
+target_bundle: dokumentacja
+default_langcode: site_default
+language_alterable: false

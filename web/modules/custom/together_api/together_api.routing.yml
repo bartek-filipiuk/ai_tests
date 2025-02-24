@@ -1,0 +1,15 @@
+together_api.settings:
+  path: '/admin/config/services/together-api'
+  defaults:
+    _form: '\Drupal\together_api\Form\SettingsForm'
+    _title: 'Together API settings'
+  requirements:
+    _permission: 'administer together api'
+
+together_api.test_page:
+  path: '/admin/config/services/together-api/test'
+  defaults:
+    _form: '\Drupal\together_api\Form\TestEndpointForm'
+    _title: 'Together API Test Page'
+  requirements:
+    _permission: 'administer together api'

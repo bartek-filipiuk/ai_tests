@@ -1,0 +1,10 @@
+services:
+  salad_integration.api_client:
+    class: Drupal\salad_integration\SaladApiClient
+    arguments: ['@http_client', '@config.factory', '@logger.factory']
+
+  salad_integration.transcription_form:
+    class: Drupal\salad_integration\Form\SaladTranscriptionForm
+    arguments: ['@salad_integration.api_client', '@file_system', '@renderer', '@file.repository']
+    tags:
+      - { name: form }

@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Telegram Assistant module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function telegram_assistant_schema() {
+  $schema['telegram_assistant_threads'] = [
+    'description' => 'Stores Telegram chat to OpenAI thread mappings.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique record ID.',
+      ],
+      'chat_id' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'The Telegram chat ID.',
+      ],
+      'thread_id' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'The OpenAI thread ID.',
+      ],
+      'created' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'description' => 'The Unix timestamp when the record was created.',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'chat_id' => ['chat_id'],
+      'thread_id' => ['thread_id'],
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function telegram_assistant_uninstall() {
+  \Drupal::configFactory()->getEditable('telegram_assistant.settings')->delete();
+}

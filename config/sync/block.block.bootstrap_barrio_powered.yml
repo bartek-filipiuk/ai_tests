@@ -1,0 +1,22 @@
+uuid: 907f4b3b-b156-4a49-976e-348359e2a061
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: uHGQeXpjudF5HkwGniQ_zzUngqcc3iAzzE7fdjWJiyA
+id: bootstrap_barrio_powered
+theme: bootstrap_barrio
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Witrynę napędza Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Receipt module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function receipt_theme($existing, $type, $theme, $path) {
+  return [
+    "receipt_upload_block" => [
+      "variables" => [],
+      "template" => "receipt-upload-block",
+    ],
+  ];
+}

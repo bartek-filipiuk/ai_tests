@@ -1,0 +1,7 @@
+ai_perplexity.settings:
+  path: '/admin/config/ai/providers/perplexity'
+  defaults:
+    _form: '\Drupal\ai_perplexity\Form\PerplexitySettingsForm'
+    _title: 'Perplexity AI Settings'
+  requirements:
+    _permission: 'administer ai providers'

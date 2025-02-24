@@ -1,0 +1,7 @@
+openaai_assistant_api.assistant_selection:
+  path: '/admin/config/services/openaai-assistant'
+  defaults:
+    _form: '\Drupal\openaai_assistant_api\Form\AssistantSelectionForm'
+    _title: 'OpenAI Assistant Selection'
+  requirements:
+    _permission: 'administer site configuration'

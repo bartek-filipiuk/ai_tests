@@ -1,0 +1,18 @@
+uuid: 8a982bbd-562b-4538-b54f-b9a2cedaed16
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_idea_starter
+id: node.social_idea_starter.changed
+field_name: changed
+entity_type: node
+bundle: social_idea_starter
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,13 @@
+uuid: 4130d0f0-2dd0-4a78-b579-5601fb070615
+langcode: pl
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: h3BeHVei4Lnyqbkao3YiF4KqoY-DhRvUNfEgKG8Rgjg
+id: paragraph.preview
+label: Podgląd
+description: null
+targetEntityType: paragraph
+cache: true

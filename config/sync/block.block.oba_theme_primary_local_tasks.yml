@@ -1,0 +1,22 @@
+uuid: af947c93-b28f-4f46-9884-54927c8d2b54
+langcode: pl
+status: true
+dependencies:
+  theme:
+    - oba_theme
+_core:
+  default_config_hash: lZdGi5t-uAyRyOAPuFznU_YA1zXZXorWftx6Csrcz3c
+id: oba_theme_primary_local_tasks
+theme: oba_theme
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Zakładki podstawowe'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

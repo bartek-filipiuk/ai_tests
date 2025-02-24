@@ -1,0 +1,21 @@
+uuid: 78dcd549-5072-4c0c-8108-2f325aaf8e75
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_media
+  module:
+    - text
+id: taxonomy_term.social_media.description
+field_name: description
+entity_type: taxonomy_term
+bundle: social_media
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

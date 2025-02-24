@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - receipt
+name: receipt
+type: receipt
+description: "Store receipt information with products and prices"
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: true

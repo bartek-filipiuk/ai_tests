@@ -1,0 +1,28 @@
+I have a custom module gearoq_api
+
+I need to create a POST resource for json api which will create a content with type: social_content_proposition.
+Fields used in this content are:
+
+- body - text area
+- field_social_media: Entity reference
+Reference type: Taxonomy term
+Vocabulary: Social Media
+
+- field_update_in_airtable
+Boolean
+
+
+
+All needed modules are enabled.
+
+My user for basic authentication is "api" with password set to 123.
+
+Crete a resource with routing /api/create/social-proposition
+
+Prepare a custom form to test this POST action. Keep in mind that we will have more endpoints to test so make
+a structure for furure endpounts to test - proper routing and links for test forms. In testing form use api user nam, not currently logged user name. We need test if "api"
+use is working properly.
+
+This api will be used by external service to create a content so "api" user need to be able use this endpoint.
+
+At the end give me an example json to send which will create an example content.

@@ -1,0 +1,10 @@
+uuid: 6f27a78e-e7db-4bb5-8fbf-14f3e1e3b97a
+langcode: pl
+status: true
+dependencies: {  }
+id: content_reference
+label: 'Content Reference'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

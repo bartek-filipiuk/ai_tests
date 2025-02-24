@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_automation
+id: social_automation_multiple_social_proposition
+plugin_id: 'social_automation_multiple_social_proposition'
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

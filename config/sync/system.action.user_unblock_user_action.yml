@@ -1,0 +1,13 @@
+uuid: 84e7d9cc-dd5b-4550-9ae7-21beab680b8d
+langcode: pl
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: SPsUXsR3Rc8d1y3gewzaAKWa1ncea_ywXX3f7LTn7k0
+id: user_unblock_user_action
+label: 'Odblokuj wybrane konto użytkownika(ów)'
+type: user
+plugin: user_unblock_user_action
+configuration: {  }

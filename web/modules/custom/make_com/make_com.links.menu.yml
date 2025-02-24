@@ -1,0 +1,6 @@
+make_com.settings:
+  title: 'Make.com Settings'
+  description: 'Configure Make.com integration settings'
+  parent: system.admin_config_services
+  route_name: make_com.settings
+  weight: 100

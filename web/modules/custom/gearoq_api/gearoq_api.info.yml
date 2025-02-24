@@ -1,0 +1,5 @@
+name: 'Gearoq API'
+type: module
+description: 'API functionality'
+package: Custom
+core_version_requirement: ^10 || ^11

@@ -1,0 +1,7 @@
+name: 'Make Scenarios'
+type: module
+description: 'Provides a simple form to send data to Make.com scenarios'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:system

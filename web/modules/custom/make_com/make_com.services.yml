@@ -1,0 +1,8 @@
+services:
+  make_com.client:
+    class: Drupal\make_com\Api\MakeComClient
+    arguments: ['@http_client', '@config.factory']
+  
+  make_com.scenario_service:
+    class: Drupal\make_com\Service\MakeComScenarioService
+    arguments: ['@make_com.client', '@config.factory', '@cache.default']

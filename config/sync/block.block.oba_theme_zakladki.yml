@@ -1,0 +1,20 @@
+uuid: 34b26d9c-642e-4603-939d-a990278e00b3
+langcode: pl
+status: false
+dependencies:
+  theme:
+    - oba_theme
+id: oba_theme_zakladki
+theme: oba_theme
+region: featured_top
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Zakładki
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

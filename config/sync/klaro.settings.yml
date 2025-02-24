@@ -1,0 +1,33 @@
+_core:
+  default_config_hash: 8XPI5_sR5RrfevulybYM0BwAH2STLLpODv_4ckpSz1Y
+langcode: pl
+auto_decorate_final_html: false
+auto_decorate_js_alter: true
+auto_decorate_page_attachments: true
+auto_decorate_preprocess_field: true
+block_unknown: false
+log_unknown_resources: false
+block_unknown_label: 'Unknown services'
+block_unknown_description: 'Block unknown external resources'
+show_toggle_button: true
+deletable_cookie_domains: {  }
+exclude_urls: {  }
+disable_urls: {  }
+styles:
+  - ''
+process_descriptions: false
+library:
+  element_id: klaro
+  storage_method: cookie
+  cookie_name: klaro
+  cookie_expires_after_days: 1
+  cookie_domain: ''
+  group_by_purpose: false
+  accept_all: true
+  hide_decline_all: true
+  hide_learn_more: false
+  learn_more_as_button: false
+  additional_class: ''
+  html_texts: false
+  must_consent: false
+  notice_as_modal: false

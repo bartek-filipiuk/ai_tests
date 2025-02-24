@@ -1,0 +1,35 @@
+uuid: 9f17bb49-d467-49f2-af32-acf8e7d3f56d
+langcode: pl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.automation.body
+    - field.field.node.automation.field_intro
+    - field.field.node.automation.field_links
+    - node.type.automation
+  module:
+    - text
+    - user
+id: node.automation.teaser
+targetEntityType: node
+bundle: automation
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_intro: true
+  field_links: true
+  langcode: true

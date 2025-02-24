@@ -1,0 +1,21 @@
+uuid: 76937098-6158-4791-8ebb-38ad0a18b5b2
+langcode: pl
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_user_telegram_chat_id
+field_name: field_user_telegram_chat_id
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

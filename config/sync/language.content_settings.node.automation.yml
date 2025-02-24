@@ -1,0 +1,11 @@
+uuid: 1c45b703-59eb-4396-a763-f1cb116fd4a2
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.automation
+id: node.automation
+target_entity_type_id: node
+target_bundle: automation
+default_langcode: site_default
+language_alterable: false

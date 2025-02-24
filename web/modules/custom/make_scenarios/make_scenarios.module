@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for make_scenarios module.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function make_scenarios_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.make_scenarios':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Make Scenarios module provides a simple form to send data to Make.com.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

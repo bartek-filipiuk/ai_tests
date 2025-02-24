@@ -1,0 +1,22 @@
+uuid: 1d93a142-8941-4bbc-997c-5c2da55bca29
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oba_theme
+_core:
+  default_config_hash: jhIC81rnzVJHX5AYIAKYKqS7BiJ3CkdyrMsnLUlJMLE
+id: oba_theme_messages
+theme: oba_theme
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Wiadomości statusu'
+  label_display: '0'
+  provider: system
+visibility: {  }

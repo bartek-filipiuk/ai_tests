@@ -1,0 +1,5 @@
+name: 'Telegram Assistant'
+type: module
+description: 'This is AI responsig to messages on Telegram'
+package: Custom
+core_version_requirement: ^10 || ^11

@@ -1,0 +1,16 @@
+services:
+  autobloger_ai.service:
+    class: Drupal\autobloger_ai\Service\AutoblogerAiService
+    arguments:
+      - '@config.factory'
+      - '@http_client'
+      - '@entity_type.manager'
+      - '@file_system'
+      - '@current_user'
+
+  autobloger_ai.queue_service:
+    class: Drupal\autobloger_ai\Service\BlogPostQueueService
+    arguments:
+      - '@queue'
+      - '@state'
+      - '@config.factory'

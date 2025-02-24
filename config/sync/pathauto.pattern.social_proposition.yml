@@ -1,0 +1,22 @@
+uuid: 4795565f-0a96-43d9-a124-f96425f1d27b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: social_proposition
+label: 'Social Proposition'
+type: 'canonical_entities:node'
+pattern: 'social/proposition/[node:title]'
+selection_criteria:
+  22c6f4e0-2d36-4376-b5af-1ac68c4073ef:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 22c6f4e0-2d36-4376-b5af-1ac68c4073ef
+    context_mapping:
+      node: node
+    bundles:
+      social_content_proposition: social_content_proposition
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,15 @@
+ai_page_generator.form:
+  path: '/admin/content/ai-page-generator'
+  defaults:
+    _form: '\Drupal\ai_page_generator\Form\AiPageGeneratorForm'
+    _title: 'AI Page Generator'
+  requirements:
+    _permission: 'administer site configuration'
+
+ai_page_generator.paragraph_type_tree:
+  path: '/admin/content/ai-page-generator/paragraph-type-tree'
+  defaults:
+    _controller: '\Drupal\ai_page_generator\Controller\ParagraphTypeTreeController::display'
+    _title: 'Paragraph Type Tree'
+  requirements:
+    _permission: 'administer site configuration'

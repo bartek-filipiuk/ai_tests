@@ -1,0 +1,13 @@
+Kroki
+
+1. Ustawienia dot. api key oraz api url - strona dla admina z ustawieniami.
+- te dane będa wykorzystywane w kodzie, nie wpisujemy na sztywno url do api.
+2. Struktura plików i katalogów odpowiednia do konsumowania api, klasa klienta osobno i tam endpointy
+3. Nawiązanie połączenia
+   - endpoint do komunikacji z api
+4. Pobieranie danych
+- Integracja ma pobierać dane o scenarios
+- na początek podstawowe dane
+5. Definicja innych endpointów związanymi ze scenarios
+6. Service do wywoływania endpointów z api tak aby dane pobierać z innych miejsc w kodzie
+7. utwórz README.md, opisz do czego służy moduł oraz opisz endpointy

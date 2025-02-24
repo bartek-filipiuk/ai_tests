@@ -1,0 +1,9 @@
+name: 'AutoblogerAI'
+type: module
+description: 'Generate blog posts using AI'
+package: Custom
+core_version_requirement: ^10 || ^11
+project: 'autobloger_ai'
+dependencies:
+  - ai:ai
+configure: autobloger_ai.settings

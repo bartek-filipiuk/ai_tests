@@ -1,0 +1,20 @@
+uuid: dcf68f8b-f8aa-4495-8288-4dcc261224f6
+langcode: pl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: Fe3N1uqaAyyKJbVkqT-btXy3t98puW8GCRD822xjl10
+name: Artykuł
+type: article
+description: 'Użyj <em>artykułów</em> dla dynamicznych treści, takich jak newsy, przegląd prasy lub wpisy na blogu.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,34 @@
+salad_integration.admin_config:
+  title: 'Salad Integration'
+  description: 'Manage Salad Integration settings and transcriptions'
+  parent: system.admin_config_services
+  route_name: salad_integration.overview
+  weight: 100
+
+salad_integration.settings:
+  title: 'Salad API Settings'
+  description: 'Configure Salad API settings'
+  parent: salad_integration.admin_config
+  route_name: salad_integration.settings
+  weight: 0
+
+salad_integration.transcription:
+  title: 'Create Transcription'
+  description: 'Create a new transcription'
+  parent: salad_integration.admin_config
+  route_name: salad_integration.transcription
+  weight: 1
+
+salad_integration.transcription_list:
+  title: 'Transcriptions List'
+  description: 'View all transcriptions'
+  parent: salad_integration.admin_config
+  route_name: salad_integration.transcription_list
+  weight: 2
+
+salad_integration.result:
+  title: 'Transcription Results'
+  description: 'View transcription results'
+  parent: salad_integration.admin_config
+  route_name: salad_integration.result
+  weight: 3

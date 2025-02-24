@@ -1,0 +1,14 @@
+uuid: f7a85fa3-a8ec-44bd-82ee-001e08ee90e6
+langcode: pl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 8rVcRXLnTAEoWs7zl8du-7RIUnayqUcGYnvb3JT21-o
+id: time_zones
+label: 'Strefy czasowe'
+category: 'Data i czas'
+likert: false
+options: ''

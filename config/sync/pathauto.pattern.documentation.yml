@@ -1,0 +1,22 @@
+uuid: d33e4325-de3b-4e16-8d20-519263cc7cde
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+id: documentation
+label: Documentation
+type: 'canonical_entities:node'
+pattern: 'docs/[node:title]'
+selection_criteria:
+  5fb4927d-a1a8-4772-90f5-35ed31c14433:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5fb4927d-a1a8-4772-90f5-35ed31c14433
+    context_mapping:
+      node: node
+    bundles:
+      dokumentacja: dokumentacja
+selection_logic: and
+weight: -5
+relationships: {  }

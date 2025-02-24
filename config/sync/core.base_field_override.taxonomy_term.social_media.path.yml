@@ -1,0 +1,20 @@
+uuid: 36159b5a-a538-4b35-ab78-98c3af23db34
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_media
+  module:
+    - path
+id: taxonomy_term.social_media.path
+field_name: path
+entity_type: taxonomy_term
+bundle: social_media
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,20 @@
+uuid: 2943d488-8203-447b-a3f6-da280dbd7ab8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_content_proposition
+  module:
+    - path
+id: node.social_content_proposition.path
+field_name: path
+entity_type: node
+bundle: social_content_proposition
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

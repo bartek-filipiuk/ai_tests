@@ -1,0 +1,15 @@
+make_com.settings:
+  path: '/admin/config/services/make-com'
+  defaults:
+    _form: '\Drupal\make_com\Form\MakeComSettingsForm'
+    _title: 'Make.com Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+make_com.test_api:
+  path: '/admin/config/services/make-com/test'
+  defaults:
+    _controller: '\Drupal\make_com\Controller\MakeComTestController::testApi'
+    _title: 'Test Make.com API'
+  requirements:
+    _permission: 'administer site configuration'

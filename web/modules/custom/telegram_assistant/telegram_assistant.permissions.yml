@@ -1,0 +1,4 @@
+administer telegram_assistant:
+  title: 'Administer Telegram Assistant'
+  description: 'Allow to access the administration form to configure Telegram Assistant.'
+  restrict access: true

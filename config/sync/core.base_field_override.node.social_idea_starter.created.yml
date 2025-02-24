@@ -1,0 +1,18 @@
+uuid: 6f261513-cd67-4c7c-a168-53656efbc545
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_idea_starter
+id: node.social_idea_starter.created
+field_name: created
+entity_type: node
+bundle: social_idea_starter
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

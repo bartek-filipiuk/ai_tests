@@ -1,0 +1,83 @@
+uuid: 19a2b731-a85b-4335-9058-1f0ccaba26a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.page
+    - node.type.social_content_proposition
+    - node.type.social_idea_starter
+    - taxonomy.vocabulary.social_media
+    - taxonomy.vocabulary.tags
+  module:
+    - file
+    - node
+    - system
+    - taxonomy
+id: api
+label: api
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access taxonomy overview'
+  - 'administer content types'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'bypass node access'
+  - 'create article content'
+  - 'create page content'
+  - 'create social_content_proposition content'
+  - 'create social_idea_starter content'
+  - 'create terms in social_media'
+  - 'create terms in tags'
+  - 'delete all revisions'
+  - 'delete all taxonomy revisions'
+  - 'delete any article content'
+  - 'delete any file'
+  - 'delete any page content'
+  - 'delete any social_content_proposition content'
+  - 'delete any social_idea_starter content'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own files'
+  - 'delete own page content'
+  - 'delete own social_content_proposition content'
+  - 'delete own social_idea_starter content'
+  - 'delete page revisions'
+  - 'delete social_content_proposition revisions'
+  - 'delete social_idea_starter revisions'
+  - 'delete term revisions in social_media'
+  - 'delete term revisions in tags'
+  - 'delete terms in social_media'
+  - 'delete terms in tags'
+  - 'edit any article content'
+  - 'edit any page content'
+  - 'edit any social_content_proposition content'
+  - 'edit any social_idea_starter content'
+  - 'edit own article content'
+  - 'edit own page content'
+  - 'edit own social_content_proposition content'
+  - 'edit own social_idea_starter content'
+  - 'edit terms in social_media'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert all taxonomy revisions'
+  - 'revert article revisions'
+  - 'revert page revisions'
+  - 'revert social_content_proposition revisions'
+  - 'revert social_idea_starter revisions'
+  - 'revert term revisions in social_media'
+  - 'revert term revisions in tags'
+  - 'view all revisions'
+  - 'view all taxonomy revisions'
+  - 'view article revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view social_content_proposition revisions'
+  - 'view social_idea_starter revisions'
+  - 'view term revisions in social_media'
+  - 'view term revisions in tags'
+  - 'view vocabulary labels'

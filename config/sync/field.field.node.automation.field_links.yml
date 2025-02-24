@@ -1,0 +1,23 @@
+uuid: e6690a98-17d4-4b73-8ff7-74af0a5c14e0
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_links
+    - node.type.automation
+  module:
+    - link
+id: node.automation.field_links
+field_name: field_links
+entity_type: node
+bundle: automation
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

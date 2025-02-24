@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: pl
+uuid: 4c30bd34-aaeb-4ddf-9a61-de15c829c607
+name: 'Open Business Automations'
+mail: bartek@devince.dev
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/27
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: pl
+mail_notification: ''

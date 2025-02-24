@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Social Automation module.
+ */
+
+use Drupal\Core\Datetime\DrupalDateTime;
+
+/**
+ * Implements hook_cron().
+ */
+function social_automation_cron() {
+  $social_automation_service = \Drupal::service('social_automation.service');
+  $current_datetime = new DrupalDateTime('now');
+  $formatted_datetime = $current_datetime->format('Y-m-d H:i:s');
+
+  // Trigger webhook for Twitter
+  $social_automation_service->triggerWebhook('twitter', $formatted_datetime);
+
+  // Trigger webhook for LinkedIn
+  $social_automation_service->triggerWebhook('linkedin', $formatted_datetime);
+}

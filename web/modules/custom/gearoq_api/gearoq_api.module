@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Gearoq API module.
+ */
+
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_access().
+ */
+function gearoq_api_entity_access(EntityInterface $entity, $operation, AccountInterface $account) {
+  // Allow the 'api' user to create social_content_proposition nodes.
+  if ($entity->getEntityTypeId() === 'node' &&
+      $entity->bundle() === 'social_content_proposition' &&
+      $operation === 'create' &&
+      $account->getAccountName() === 'api') {
+    return \Drupal\Core\Access\AccessResult::allowed();
+  }
+
+  return \Drupal\Core\Access\AccessResult::neutral();
+}
+
+/**
+ * Implements hook_node_access().
+ */
+function gearoq_api_node_access(EntityInterface $entity, $operation, AccountInterface $account) {
+  if ($entity->getEntityTypeId() === 'node' &&
+      $entity->bundle() === 'social_content_proposition' &&
+      $operation === 'create' &&
+      $account->getAccountName() === 'api') {
+    return \Drupal\Core\Access\AccessResult::allowed();
+  }
+
+  return \Drupal\Core\Access\AccessResult::neutral();
+}

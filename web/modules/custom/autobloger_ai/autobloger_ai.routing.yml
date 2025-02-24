@@ -1,0 +1,23 @@
+autobloger_ai.settings:
+  path: '/admin/config/content/autobloger-ai'
+  defaults:
+    _form: '\Drupal\autobloger_ai\Form\SettingsForm'
+    _title: 'AutoblogerAI Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+autobloger_ai.generate:
+  path: '/admin/content/autobloger-ai/generate'
+  defaults:
+    _form: '\Drupal\autobloger_ai\Form\BlogPostGenerationForm'
+    _title: 'Generate AI Blog Post'
+  requirements:
+    _permission: 'administer site configuration'
+
+autobloger_ai.blog_subjects:
+  path: '/admin/config/content/autobloger-ai/subjects'
+  defaults:
+    _form: '\Drupal\autobloger_ai\Form\BlogSubjectsConfigForm'
+    _title: 'Blog Subjects Configuration'
+  requirements:
+    _permission: 'administer site configuration'

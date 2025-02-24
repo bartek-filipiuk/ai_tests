@@ -1,0 +1,22 @@
+uuid: f7bf0d49-4f78-4097-9067-e15da905bc5a
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+id: automation
+label: Automation
+type: 'canonical_entities:node'
+pattern: 'automation/[node:title]'
+selection_criteria:
+  9be43aef-5c4f-4cfc-9a6f-005d0fbefd1c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9be43aef-5c4f-4cfc-9a6f-005d0fbefd1c
+    context_mapping:
+      node: node
+    bundles:
+      automation: automation
+selection_logic: and
+weight: -5
+relationships: {  }

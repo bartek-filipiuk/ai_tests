@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Salad Transcription API Integration module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function salad_integration_theme($existing, $type, $theme, $path) {
+  return [
+    'transcription_view' => [
+      'variables' => [
+        'transcription' => NULL,
+        'result_data' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_library_info_build().
+ */
+function salad_integration_library_info_build() {
+  $libraries = [];
+  $libraries['transcription-view'] = [
+    'js' => [
+      'js/transcription-view.js' => [],
+    ],
+    'dependencies' => [
+      'core/drupal',
+      'core/jquery',
+      'core/once',
+    ],
+  ];
+  return $libraries;
+}

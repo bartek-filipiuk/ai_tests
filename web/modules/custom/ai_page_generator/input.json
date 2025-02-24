@@ -1,0 +1,514 @@
+{
+  "d_p_banner": {
+    "name": "Banner",
+    "description": "Creates a banner with a background, icon, text, and a CTA (Call to Action) button. It can be used on homepages or subpages to grab the user's attention and encourage them to take a specific action, such as navigating to another page, subscribing to a newsletter, or taking advantage of a special offer.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_d_subtitle",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_background",
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_block": {
+    "name": "Block paragraph",
+    "description": "Generates a general block-type paragraph that can serve as a container for other elements or content. It allows the addition of custom CSS classes and the adjustment of margins and paddings. Useful for organizing page structure and grouping related content.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": []
+    }
+  },
+  "d_p_blog_image": {
+    "name": "Blog image",
+    "description": "Inserts an image into a blog post with options for wide or narrow formatting. Used to enrich content with visual elements, increasing the attractiveness of the post and engaging the reader. Ideal for illustrating points discussed in the article.",
+    "fields": {
+      "text": [
+        "behavior_settings"
+      ],
+      "media": [
+        "field_d_media_image"
+      ]
+    }
+  },
+  "d_p_blog_text": {
+    "name": "Blog text",
+    "description": "Adds a text section within a blog post. Enables the presentation of the main article content with formatting options. A basic element for creating and structuring blog entries.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_d_long_text"
+      ],
+      "media": []
+    }
+  },
+  "d_p_carousel": {
+    "name": "Carousel",
+    "description": "Creates a carousel of items scrolled using the Slick library. Can contain images, texts, or other content in the form of slides. Used to display multiple elements in a limited space, such as project portfolios, client testimonials, or featured products.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_icon"
+      ]
+    },
+    "nested_paragraphs": {
+      "field_d_p_cs_item_reference": {
+        "d_p_carousel_item": {
+          "name": "Carousel item",
+          "description": "A single item used within a carousel. Can include a title, text, and icon. Used to add individual slides to the carousel paragraph. Allows detailed information presentation for each item in the carousel.",
+          "fields": {
+            "text": [
+              "behavior_settings",
+              "field_d_long_text",
+              "field_d_main_title",
+              "field_heading_type",
+              "field_theme"
+            ],
+            "media": [
+              "field_d_media_icon"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "d_p_carousel_item": {
+    "name": "Carousel item",
+    "description": "A single item used within a carousel. Can include a title, text, and icon. Used to add individual slides to the carousel paragraph. Allows detailed information presentation for each item in the carousel.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_form": {
+    "name": "Form",
+    "description": "Embeds a Drupal form within a paragraph. Allows the addition of contact forms, newsletter sign-ups, or other interactive forms directly on the page. Useful on contact pages, landing pages, or anywhere user interaction is needed.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_form_layout",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_background",
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_gallery": {
+    "name": "Gallery",
+    "description": "Creates a simple image gallery with Colorbox support for enlarging images in a modal window. It does not have pagination. Used to display collections of photos, graphics, or illustrations on portfolio pages, events, or products.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_icon",
+        "field_d_media_image"
+      ]
+    }
+  },
+  "d_p_group_of_counters": {
+    "name": "Group of counters",
+    "description": "Generates a group of counters that animate to specific numerical values. Used to present statistics, achievements, or other key numerical data, such as the number of completed projects, satisfied clients, or years of experience.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_background",
+        "field_d_media_icon"
+      ]
+    },
+    "nested_paragraphs": {
+      "field_d_counter_reference": {
+        "d_p_single_counter": {
+          "name": "Single counter",
+          "description": "A single counter used within the \"Group of counters\" paragraph. Displays one numerical value with animation options. Serves to highlight a specific statistic or achievement in an attractive visual way.",
+          "fields": {
+            "text": [
+              "behavior_settings",
+              "field_d_main_title"
+            ],
+            "media": [
+              "field_d_media_icon"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "d_p_group_of_text_blocks": {
+    "name": "Group of text blocks",
+    "description": "Creates a group of text blocks or node references. Allows the presentation of several text sections in a list or grid layout. Useful for showcasing services, features, FAQs, or team members.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_icon"
+      ]
+    },
+    "nested_paragraphs": {
+      "field_d_p_tb_block_reference": {
+        "d_p_single_text_block": {
+          "name": "Single block text",
+          "description": "A single text block used in \"Group of text blocks\" or \"Side by side\". Contains a title and content with formatting options. Used to add individual pieces of information in an organized form. Ideal for detailed descriptions of products, services, or features.",
+          "fields": {
+            "text": [
+              "behavior_settings",
+              "field_d_long_text",
+              "field_d_main_title",
+              "field_heading_type",
+              "field_theme"
+            ],
+            "media": [
+              "field_d_media_background",
+              "field_d_media_icon"
+            ]
+          }
+        },
+        "d_p_node": {
+          "name": "Node",
+          "description": "A paragraph referencing existing content (node) used in \"Group of text blocks\" or \"Side by side\". Allows inclusion of content from other pages or articles in the current layout. Used to dynamically display up-to-date content without duplication.",
+          "fields": {
+            "text": [
+              "behavior_settings",
+              "field_theme"
+            ],
+            "media": []
+          }
+        }
+      }
+    }
+  },
+  "d_p_media": {
+    "name": "Media",
+    "description": "Allows embedding of one Media Library item, such as an image, video, or audio file. Used to add single media elements without additional text. Useful when you want to highlight a specific multimedia element on the page.",
+    "fields": {
+      "text": [
+        "behavior_settings"
+      ],
+      "media": [
+        "field_d_p_media_item"
+      ]
+    }
+  },
+  "d_p_node": {
+    "name": "Node",
+    "description": "A paragraph referencing existing content (node) used in \"Group of text blocks\" or \"Side by side\". Allows inclusion of content from other pages or articles in the current layout. Used to dynamically display up-to-date content without duplication.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_theme"
+      ],
+      "media": []
+    }
+  },
+  "d_p_reference_content": {
+    "name": "Reference content",
+    "description": "Creates a list of node references, such as the latest blog posts, articles, or products. Used to automatically display current or selected content in a specific area of the page. Helps keep the site dynamic and engaging.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_side_by_side": {
+    "name": "Side by side",
+    "description": "Generates a two-column layout where each column can contain a text block, node reference, or media element. Used for comparing information, presenting related content side by side, or creating a balanced page layout.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_icon"
+      ]
+    },
+    "nested_paragraphs": {
+      "field_d_p_sbs_items": {
+        "d_p_node": {
+          "name": "Node",
+          "description": "A paragraph referencing existing content (node) used in \"Group of text blocks\" or \"Side by side\". Allows inclusion of content from other pages or articles in the current layout. Used to dynamically display up-to-date content without duplication.",
+          "fields": {
+            "text": [
+              "behavior_settings",
+              "field_theme"
+            ],
+            "media": []
+          }
+        },
+        "d_p_single_text_block": {
+          "name": "Single block text",
+          "description": "A single text block used in \"Group of text blocks\" or \"Side by side\". Contains a title and content with formatting options. Used to add individual pieces of information in an organized form. Ideal for detailed descriptions of products, services, or features.",
+          "fields": {
+            "text": [
+              "behavior_settings",
+              "field_d_long_text",
+              "field_d_main_title",
+              "field_heading_type",
+              "field_theme"
+            ],
+            "media": [
+              "field_d_media_background",
+              "field_d_media_icon"
+            ]
+          }
+        },
+        "d_p_media": {
+          "name": "Media",
+          "description": "Allows embedding of one Media Library item, such as an image, video, or audio file. Used to add single media elements without additional text. Useful when you want to highlight a specific multimedia element on the page.",
+          "fields": {
+            "text": [
+              "behavior_settings"
+            ],
+            "media": [
+              "field_d_p_media_item"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "d_p_side_embed": {
+    "name": "Sidebar embed",
+    "description": "Allows embedding an element (e.g., video, map, interactive widget) on one side and text on the other. Used to combine multimedia with descriptions or instructions. Ideal for pages with tutorials, product demonstrations, or services.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_embed",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_embed_side",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_side_image": {
+    "name": "Sidebar image",
+    "description": "Displays a background image on one side and text on the other. Used to create visually appealing sections with a split between image and content. Useful on product pages, service pages, or \"About Us\" sections to combine photos with descriptions.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_image_side",
+        "field_image_width",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_background",
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_side_tiles": {
+    "name": "Sidebar tiles",
+    "description": "Creates a gallery of tiles on one side and text on the other. Used to present a set of images, icons, or brief information with accompanying description. Ideal for pages showcasing product features, portfolios, or service offerings.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme",
+        "field_tiles_gallery_side"
+      ],
+      "media": [
+        "field_d_media_icon",
+        "field_d_media_image"
+      ]
+    }
+  },
+  "d_p_single_counter": {
+    "name": "Single counter",
+    "description": "A single counter used within the \"Group of counters\" paragraph. Displays one numerical value with animation options. Serves to highlight a specific statistic or achievement in an attractive visual way.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_d_main_title"
+      ],
+      "media": [
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_single_text_block": {
+    "name": "Single block text",
+    "description": "A single text block used in \"Group of text blocks\" or \"Side by side\". Contains a title and content with formatting options. Used to add individual pieces of information in an organized form. Ideal for detailed descriptions of products, services, or features.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_heading_type",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_background",
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_text_paged": {
+    "name": "Text page",
+    "description": "Adds a simple text paragraph with formatting options, a title, and a subtitle. Used to present the main content of a page, articles, information, or instructions. A fundamental element for creating pages with content primarily based on text.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_d_subtitle",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_text_align",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_background_image",
+        "field_d_media_icon"
+      ]
+    }
+  },
+  "d_p_tiles": {
+    "name": "Tiles gallery",
+    "description": "Creates an image gallery in a masonry layout (tiles of varying heights) with Colorbox support for enlarging images. Used for aesthetically presenting a large number of images, such as portfolios, product galleries, or event photos.",
+    "fields": {
+      "text": [
+        "behavior_settings",
+        "field_additional_classes",
+        "field_d_long_text",
+        "field_d_main_title",
+        "field_featured_images",
+        "field_heading_type",
+        "field_margin_bottom",
+        "field_margin_top",
+        "field_padding_bottom",
+        "field_padding_top",
+        "field_theme"
+      ],
+      "media": [
+        "field_d_media_icon",
+        "field_d_media_image"
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+services:
+  openaai_assistant_api.assistant_service:
+    class: Drupal\openaai_assistant_api\Service\OpenAIAssistantService
+    arguments: ['@ai.provider', '@logger.factory', '@ai.form_helper']

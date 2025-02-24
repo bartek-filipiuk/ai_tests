@@ -1,0 +1,45 @@
+gearoq_api.test_form:
+  path: '/admin/config/services/gearoq-api/test'
+  defaults:
+    _form: '\Drupal\gearoq_api\Form\GearoqApiTestForm'
+    _title: 'Gearoq API Test Form'
+  requirements:
+    _permission: 'administer site configuration'
+
+gearoq_api.social_proposition_resource:
+  path: '/api/create/social-proposition'
+  defaults:
+    _controller: '\Drupal\gearoq_api\Controller\SocialPropositionController::handle'
+  methods: [POST]
+  requirements:
+    _custom_access: '\Drupal\gearoq_api\Controller\SocialPropositionController::access'
+    _format: 'json'
+  options:
+    _auth: ['basic_auth']
+
+gearoq_api.json_validator_resource:
+  path: '/api/validate/json'
+  defaults:
+    _controller: '\Drupal\gearoq_api\Controller\JsonValidatorController::handle'
+  methods: [POST]
+  requirements:
+    _custom_access: '\Drupal\gearoq_api\Controller\JsonValidatorController::access'
+    _format: 'json'
+  options:
+    _auth: ['basic_auth']
+
+gearoq_api.json_validator_test_form:
+  path: '/admin/config/services/gearoq-api/test-json-validator'
+  defaults:
+    _form: '\Drupal\gearoq_api\Form\JsonValidatorTestForm'
+    _title: 'JSON Validator Test Form'
+  requirements:
+    _role: 'administrator'
+
+gearoq_api.webhook_test_form:
+  path: '/admin/config/services/gearoq-api/webhook-test'
+  defaults:
+    _form: '\Drupal\gearoq_api\Form\WebhookTestForm'
+    _title: 'Webhook Test Form'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,22 @@
+uuid: 5e874fc1-a3fe-4f50-9000-0b9e38303494
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: social_starter
+label: 'Social Starter'
+type: 'canonical_entities:node'
+pattern: 'social/starter/[node:title]'
+selection_criteria:
+  73f5c662-934b-4d87-8d27-1bca6322021e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 73f5c662-934b-4d87-8d27-1bca6322021e
+    context_mapping:
+      node: node
+    bundles:
+      social_idea_starter: social_idea_starter
+selection_logic: and
+weight: -5
+relationships: {  }

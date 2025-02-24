@@ -1,0 +1,20 @@
+uuid: c95dc46f-b0fd-463e-9ab0-5ede1311f8b6
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_telegram_chat_id
+  module:
+    - user
+id: user.user.field_user_telegram_chat_id
+field_name: field_user_telegram_chat_id
+entity_type: user
+bundle: user
+label: 'Telegram Chat Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

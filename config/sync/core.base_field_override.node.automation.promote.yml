@@ -1,0 +1,22 @@
+uuid: 4ee85535-0dab-4c87-937b-6125cdceb191
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.automation
+id: node.automation.promote
+field_name: promote
+entity_type: node
+bundle: automation
+label: 'Promowany na stronie głównej'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

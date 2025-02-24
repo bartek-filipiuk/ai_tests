@@ -1,0 +1,19 @@
+uuid: 48da7c4f-6a7f-474f-b9b0-a959c1cbc9c4
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model
+    - node.type.prompts
+id: node.prompts.field_model
+field_name: field_model
+entity_type: node
+bundle: prompts
+label: Model
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

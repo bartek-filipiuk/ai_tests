@@ -1,0 +1,65 @@
+[
+  {
+    "pages": [
+      {
+        "title": "Home",
+        "url": "/",
+        "content_type": "content_page",
+        "fields": {
+          "field_page_section": [
+            {
+              "type": "d_p_banner",
+              "fields": {
+                "field_d_main_title": "Welcome to My Portfolio",
+                "field_d_subtitle": "Drupal Developer & Enthusiast",
+                "field_d_long_text": "Crafting bespoke Drupal solutions.",
+                "field_d_media_background": 101,
+                "field_d_media_icon": 102,
+                "field_theme": "default"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "About Me",
+        "url": "/about-me",
+        "content_type": "content_page",
+        "fields": {
+          "field_page_section": [
+            {
+              "type": "d_p_text_paged",
+              "fields": {
+                "field_d_main_title": "About Me",
+                "field_d_subtitle": "Passionate Drupal Developer",
+                "field_d_long_text": "With over 5 years of experience in developing custom Drupal modules and themes...",
+                "field_d_media_background_image": 103,
+                "field_theme": "light"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Contact",
+        "url": "/contact",
+        "content_type": "content_page",
+        "fields": {
+          "field_page_section": [
+            {
+              "type": "d_p_form",
+              "fields": {
+                "field_d_main_title": "Get in Touch",
+                "field_d_long_text": "Feel free to reach out for collaborations or just a friendly chat.",
+                "field_form_layout": "standard",
+                "field_d_media_background": 104,
+                "field_d_media_icon": 105,
+                "field_theme": "dark"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

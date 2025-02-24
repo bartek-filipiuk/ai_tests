@@ -1,0 +1,18 @@
+uuid: 88f6b408-c719-4569-9760-f2809e829767
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_media
+id: taxonomy_term.social_media.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: social_media
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

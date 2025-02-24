@@ -1,0 +1,7 @@
+name: 'OpenAI Assistant API'
+type: module
+description: 'Integration with OpenAI assistant API'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - ai:ai

@@ -1,0 +1,27 @@
+uuid: be0c7d3b-1a36-4d63-9b72-7025726b7075
+langcode: pl
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - oba_theme
+_core:
+  default_config_hash: ZnGEQWm5L9s4y80-sk-x_jb5k2hqeDuIeulVtAsguqo
+id: oba_theme_account_menu
+theme: oba_theme
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menu konta użytkownika'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

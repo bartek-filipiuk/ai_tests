@@ -1,0 +1,55 @@
+salad_integration.overview:
+  path: '/admin/config/services/salad'
+  defaults:
+    _controller: '\Drupal\salad_integration\Controller\SaladIntegrationController::overview'
+    _title: 'Salad Integration'
+  requirements:
+    _permission: 'administer salad integration'
+
+salad_integration.settings:
+  path: '/admin/config/services/salad/settings'
+  defaults:
+    _form: '\Drupal\salad_integration\Form\SaladSettingsForm'
+    _title: 'Salad API Settings'
+  requirements:
+    _permission: 'administer salad integration'
+
+salad_integration.transcription:
+  path: '/admin/config/services/salad/transcription'
+  defaults:
+    _form: '\Drupal\salad_integration\Form\SaladTranscriptionForm'
+    _title: 'Create Transcription'
+  requirements:
+    _permission: 'administer salad integration'
+
+salad_integration.result:
+  path: '/admin/config/services/salad/result'
+  defaults:
+    _form: '\Drupal\salad_integration\Form\SaladResultForm'
+    _title: 'Transcription Results'
+  requirements:
+    _permission: 'administer salad integration'
+
+salad_integration.transcription_list:
+  path: '/admin/config/services/salad/transcriptions'
+  defaults:
+    _controller: '\Drupal\salad_integration\Controller\TranscriptionListController::listTranscriptions'
+    _title: 'Transcriptions List'
+  requirements:
+    _permission: 'administer salad integration'
+
+salad_integration.transcription_view:
+  path: '/admin/config/services/salad/transcriptions/{id}'
+  defaults:
+    _controller: '\Drupal\salad_integration\Controller\TranscriptionViewController::viewTranscription'
+    _title: 'View Transcription'
+  requirements:
+    _permission: 'administer salad integration'
+
+salad_integration.webhook:
+  path: '/salad-webhook'
+  defaults:
+    _controller: '\Drupal\salad_integration\Controller\SaladWebhookController::handleWebhook'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'

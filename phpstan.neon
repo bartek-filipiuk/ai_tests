@@ -1,0 +1,19 @@
+parameters:
+    level: 7
+    paths:
+        - web/modules/custom
+        - web/themes/custom
+        - web/sites/default
+    excludePaths:
+        - */tests/*
+        - */Test/*
+        - */node_modules/*
+    scanDirectories:
+        - web/core
+        - web/modules/contrib
+        - vendor
+    reportUnmatchedIgnoredErrors: false
+
+includes:
+    - vendor/mglaman/phpstan-drupal/extension.neon
+    - vendor/phpstan/phpstan-deprecation-rules/rules.neon

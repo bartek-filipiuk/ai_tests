@@ -1,0 +1,22 @@
+uuid: c73ec32b-78a0-462a-b481-3eef3143d60f
+langcode: pl
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: lpVq_Qyojss-EfQ_LgUPkPSbXcUD9ojyNZgmUZP4d7I
+id: bootstrap_barrio_secondary_local_tasks
+theme: bootstrap_barrio
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Zakładki dodatkowe'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

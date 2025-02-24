@@ -1,0 +1,151 @@
+{
+  "pages": [
+    {
+      "title": "Sample Page with Nested Paragraphs",
+      "url": "/sample-page-nested",
+      "content_type": "content_page",
+      "fields": {
+        "field_page_section": [
+          {
+            "type": "d_p_banner",
+            "fields": {
+              "field_d_main_title": "Welcome to Our Website",
+              "field_d_subtitle": "We provide exceptional services.",
+              "field_d_long_text": "Discover more about what we offer.",
+              "field_d_media_background": 201,
+              "field_d_media_icon": 202,
+              "field_theme": "default"
+            }
+          },
+          {
+            "type": "d_p_carousel",
+            "fields": {
+              "field_d_main_title": "Our Projects",
+              "field_d_long_text": "Browse through our recent works.",
+              "field_d_media_icon": 203,
+              "field_theme": "light"
+            },
+            "nested_paragraphs": {
+              "field_d_p_cs_item_reference": [
+                {
+                  "type": "d_p_carousel_item",
+                  "fields": {
+                    "field_d_main_title": "Project One",
+                    "field_d_long_text": "Description of Project One.",
+                    "field_d_media_icon": 204,
+                    "field_theme": "light"
+                  }
+                },
+                {
+                  "type": "d_p_carousel_item",
+                  "fields": {
+                    "field_d_main_title": "Project Two",
+                    "field_d_long_text": "Description of Project Two.",
+                    "field_d_media_icon": 205,
+                    "field_theme": "light"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "d_p_group_of_counters",
+            "fields": {
+              "field_d_main_title": "Our Achievements",
+              "field_d_long_text": "Key statistics about our company.",
+              "field_d_media_background": 206,
+              "field_d_media_icon": 207,
+              "field_theme": "dark"
+            },
+            "nested_paragraphs": {
+              "field_d_counter_reference": [
+                {
+                  "type": "d_p_single_counter",
+                  "fields": {
+                    "field_d_main_title": "100+",
+                    "field_d_long_text": "Projects Completed",
+                    "field_d_media_icon": 208
+                  }
+                },
+                {
+                  "type": "d_p_single_counter",
+                  "fields": {
+                    "field_d_main_title": "50+",
+                    "field_d_long_text": "Happy Clients",
+                    "field_d_media_icon": 209
+                  }
+                },
+                {
+                  "type": "d_p_single_counter",
+                  "fields": {
+                    "field_d_main_title": "10",
+                    "field_d_long_text": "Years in Business",
+                    "field_d_media_icon": 210
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "d_p_side_by_side",
+            "fields": {
+              "field_d_main_title": "About Us",
+              "field_d_long_text": "Learn more about our team and values.",
+              "field_d_media_icon": 211,
+              "field_theme": "default"
+            },
+            "nested_paragraphs": {
+              "field_d_p_sbs_items": [
+                {
+                  "type": "d_p_single_text_block",
+                  "fields": {
+                    "field_d_main_title": "Our Mission",
+                    "field_d_long_text": "To deliver quality services.",
+                    "field_theme": "default"
+                  }
+                },
+                {
+                  "type": "d_p_media",
+                  "fields": {
+                    "field_d_p_media_item": 212
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "d_p_gallery",
+            "fields": {
+              "field_d_main_title": "Gallery",
+              "field_d_long_text": "Visual highlights of our work.",
+              "field_d_media_icon": 213,
+              "field_d_media_image": [214, 215, 216],
+              "field_theme": "light"
+            }
+          },
+          {
+            "type": "d_p_text_paged",
+            "fields": {
+              "field_d_main_title": "Company History",
+              "field_d_subtitle": "Our journey over the years.",
+              "field_d_long_text": "Detailed information about our company's growth and milestones.",
+              "field_d_media_background_image": 217,
+              "field_theme": "default"
+            }
+          },
+          {
+            "type": "d_p_form",
+            "fields": {
+              "field_d_main_title": "Contact Us",
+              "field_d_long_text": "Get in touch with us for more information.",
+              "field_form_layout": "standard",
+              "field_d_media_background": 218,
+              "field_d_media_icon": 219,
+              "field_theme": "dark"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

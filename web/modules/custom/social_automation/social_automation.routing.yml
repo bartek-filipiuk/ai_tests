@@ -1,0 +1,23 @@
+social_automation.ideas:
+  path: '/admin/config/services/social-automation/ideas'
+  defaults:
+    _form: '\Drupal\social_automation\Form\SocialMediaIdeasForm'
+    _title: 'Social Media Ideas'
+  requirements:
+    _permission: 'administer site configuration'
+
+social_automation.settings:
+  path: '/admin/config/services/social-automation/config'
+  defaults:
+    _form: '\Drupal\social_automation\Form\SocialAutomationSettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+social_automation.trigger_form:
+  path: '/admin/config/services/social-automation/trigger'
+  defaults:
+    _form: '\Drupal\social_automation\Form\SocialMediaTriggerForm'
+    _title: 'Social Media Trigger'
+  requirements:
+    _permission: 'administer site configuration'

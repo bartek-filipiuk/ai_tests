@@ -1,0 +1,9 @@
+*.sql
+.vscode
+
+# Keys
+config/sync/key.key.*
+.ddev
+docs
+.windsurfrules
+web/sites/default/settings.prod.php

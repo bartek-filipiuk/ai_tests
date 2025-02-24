@@ -1,0 +1,22 @@
+uuid: 24d9bff8-5716-4962-b5db-56a6057dc54c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_content_proposition
+id: node.social_content_proposition.sticky
+field_name: sticky
+entity_type: node
+bundle: social_content_proposition
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

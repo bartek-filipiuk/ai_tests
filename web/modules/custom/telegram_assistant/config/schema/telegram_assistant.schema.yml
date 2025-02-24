@@ -1,0 +1,65 @@
+telegram_assistant.telegram_bot.*:
+  type: config_entity
+  label: 'Telegram Bot'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    bot_token:
+      type: string
+      label: 'Bot Token'
+    status:
+      type: boolean
+      label: 'Status'
+    webhook_url:
+      type: string
+      label: 'Webhook URL'
+    created:
+      type: integer
+      label: 'Created'
+    changed:
+      type: integer
+      label: 'Changed'
+
+telegram_assistant.openai_assistant.*:
+  type: config_entity
+  label: 'OpenAI Assistant'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    openai_assistant_id:
+      type: string
+      label: 'OpenAI Assistant ID'
+    configuration:
+      type: mapping
+      label: 'Configuration'
+      mapping:
+        api_key:
+          type: string
+          label: 'API Key'
+        model:
+          type: string
+          label: 'Model'
+        instructions:
+          type: text
+          label: 'Instructions'
+    status:
+      type: boolean
+      label: 'Status'
+    created:
+      type: integer
+      label: 'Created'
+    changed:
+      type: integer
+      label: 'Changed'

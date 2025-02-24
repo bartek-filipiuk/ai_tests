@@ -1,0 +1,35 @@
+uuid: 878e6007-1ffc-4efa-8cb0-21beb8eddf4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_content_proposition.body
+    - field.field.node.social_content_proposition.field_social_media
+    - field.field.node.social_content_proposition.field_update_in_airtable
+    - node.type.social_content_proposition
+  module:
+    - text
+    - user
+id: node.social_content_proposition.teaser
+targetEntityType: node
+bundle: social_content_proposition
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_social_media: true
+  field_update_in_airtable: true
+  langcode: true

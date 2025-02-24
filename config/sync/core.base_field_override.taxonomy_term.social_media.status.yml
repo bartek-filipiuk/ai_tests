@@ -1,0 +1,22 @@
+uuid: 87a70020-8899-4a99-819e-c750a2870b28
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.social_media
+id: taxonomy_term.social_media.status
+field_name: status
+entity_type: taxonomy_term
+bundle: social_media
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

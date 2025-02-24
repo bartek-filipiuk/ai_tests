@@ -1,0 +1,49 @@
+_core:
+  default_config_hash: z5ut67xc_xGnp-rn9qDZwKFzFzDRJQFQHtN1ObLtXuU
+langcode: pl
+consentModal:
+  title: 'Wykorzystanie danych osobowych i plików cookie'
+  description: "Wybierz usługi i aplikacje firm trzecich, z których chcielibyśmy skorzystać.\r\n"
+  privacyPolicy:
+    name: 'politykę prywatności'
+    text: "Aby dowiedzieć się więcej, przeczytaj {privacyPolicy}.\r\n"
+    url: 'internal:/polityka-plikow-cookies'
+consentNotice:
+  changeDescription: 'Od Twojej ostatniej wizyty zaszły zmiany, prosimy o zaktualizowanie zgody.'
+  description: "Wykorzystujemy pliki cookie i przetwarzamy dane osobowe w następujących celach: {purposes}.\r\n"
+  learnMore: Dostosuj
+ok: Akceptuj
+save: Zapisz
+decline: Odrzuć
+close: Zamknij
+acceptAll: 'Akceptuj wszystkie'
+acceptSelected: 'Zaakceptuj zaznaczone'
+service:
+  disableAll:
+    title: ''
+    description: ''
+  optOut:
+    title: ''
+    description: ''
+  required:
+    title: ''
+    description: ''
+  purposes: ''
+  purpose: ''
+contextualConsent:
+  acceptAlways: Zawsze
+  acceptOnce: Tak
+  description: 'Załaduj zewnętrzną zawartość dostarczoną przez {title}?'
+poweredBy: Klaro!
+app:
+  disableAll:
+    title: 'Przełącz wszystkie usługi'
+    description: 'Użyj tego przełącznika, aby włączyć/wyłączyć wszystkie usługi.'
+  optOut:
+    title: (opt-out)
+    description: 'Usługa ta jest ładowana domyślnie (można z niej zrezygnować).'
+  required:
+    title: '(zawsze wymagane)'
+    description: 'Usługa ta jest zawsze wymagana.'
+  purposes: Zamiary
+  purpose: Zamiar

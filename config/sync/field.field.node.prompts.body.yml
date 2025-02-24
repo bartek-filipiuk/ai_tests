@@ -1,0 +1,24 @@
+uuid: 193e07b0-6295-461d-ba98-0757e06c6d66
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.prompts
+  module:
+    - text
+id: node.prompts.body
+field_name: body
+entity_type: node
+bundle: prompts
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

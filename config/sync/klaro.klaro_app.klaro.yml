@@ -1,0 +1,27 @@
+uuid: 3115cd3b-8b03-4816-96cf-2b943d17233b
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: s7IC1Av2UEYK5p4NZi8RJ2O74WIYfDe-sz2dBTn5QoY
+id: klaro
+label: Klaro!
+description: 'Zapisuje status zgody użytkownika w Twojej przeglądarce.'
+default: true
+purposes:
+  - cms
+cookies:
+  -
+    regex: klaro
+    path: ''
+    domain: ''
+required: true
+opt_out: false
+only_once: false
+info_url: 'https://github.com/klaro-org/klaro-js/blob/master/README.md'
+privacy_policy_url: 'internal:/polityka-plikow-cookies'
+javascripts: {  }
+callback_code: ''
+wrapper_identifier: {  }
+attachments: {  }
+weight: 0

@@ -1,0 +1,14 @@
+transcription-view:
+  js:
+    js/transcription-view.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+
+transcription-form:
+  js:
+    js/transcription-form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

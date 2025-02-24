@@ -1,0 +1,13 @@
+name: AI Perplexity Provider
+type: module
+description: 'Provides Perplexity AI integration for the AI module.'
+package: AI
+core_version_requirement: ^10.2 || ^11
+dependencies:
+  - ai:ai
+  - key:key
+
+# Information added by Drupal.org packaging script on 2024-12-02
+version: '1.0.0-beta2'
+project: 'ai_provider_perplexity'
+datestamp: 1733166746

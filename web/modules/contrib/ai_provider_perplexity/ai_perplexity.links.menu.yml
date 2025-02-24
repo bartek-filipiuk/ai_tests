@@ -1,0 +1,6 @@
+ai_perplexity.settings:
+  title: 'Perplexity Configuration'
+  description: 'Setup Perplexity'
+  route_name: ai_perplexity.settings
+  parent: ai.admin_providers
+

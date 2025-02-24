@@ -1,0 +1,10 @@
+name: Receipt Manager
+type: module
+description: "Provides functionality for scanning and managing receipts using OCR and GPT-4."
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:block
+  - drupal:file
+  - drupal:image
+  - drupal:rest

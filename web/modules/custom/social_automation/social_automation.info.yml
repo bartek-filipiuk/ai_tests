@@ -1,0 +1,6 @@
+name: 'Social Automation'
+type: module
+description: 'Manage social media content and ideas'
+package: Custom
+core_version_requirement: ^10 || ^11
+configure: social_automation.settings

@@ -1,0 +1,5 @@
+name: 'Make.com integration'
+type: module
+description: 'Intergation between Drupal and make.com automations'
+package: Custom
+core_version_requirement: ^10 || ^11

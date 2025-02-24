@@ -1,0 +1,9 @@
+uuid: c349a9b7-4dc9-47db-a1d3-7bdbd07af28b
+langcode: pl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XzUzw2xfAZEvZkpul-hKyvrd-9D-8W8qL9bU1JTx9cw
+id: cms
+label: CMS
+weight: 2

@@ -1,0 +1,24 @@
+uuid: f37aeea9-344c-4a13-bf3d-3f2d2da4a448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.social_idea_starter
+  module:
+    - text
+id: node.social_idea_starter.body
+field_name: body
+entity_type: node
+bundle: social_idea_starter
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

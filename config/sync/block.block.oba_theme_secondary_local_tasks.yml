@@ -1,0 +1,22 @@
+uuid: 3f3ec6f4-94e4-4231-b220-79a2e007244a
+langcode: pl
+status: true
+dependencies:
+  theme:
+    - oba_theme
+_core:
+  default_config_hash: 64RRid5tQTbDnQ6lM8B8PDWqCJAjKY6QWsbKvQL8McU
+id: oba_theme_secondary_local_tasks
+theme: oba_theme
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Zakładki dodatkowe'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

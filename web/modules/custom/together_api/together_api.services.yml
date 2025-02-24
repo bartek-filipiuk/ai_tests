@@ -1,0 +1,7 @@
+services:
+  together_api.client:
+    class: Drupal\together_api\Service\Client
+    arguments:
+      - '@config.factory'
+      - '@http_client'
+      - '@logger.factory'

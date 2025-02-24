@@ -1,0 +1,33 @@
+uuid: ea26b90e-793d-4036-bbf9-643dcfdba1ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_idea_starter.body
+    - field.field.node.social_idea_starter.field_social_media
+    - node.type.social_idea_starter
+  module:
+    - text
+    - user
+id: node.social_idea_starter.teaser
+targetEntityType: node
+bundle: social_idea_starter
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_social_media: true
+  langcode: true

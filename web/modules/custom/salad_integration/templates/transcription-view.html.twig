@@ -1,0 +1,65 @@
+<h1>{{ 'Transcription'|t }}</h1>
+
+{% if result_data %}
+  <div>{{ 'Job ID'|t }}: {{ result_data.id }}</div>
+  <div>{{ 'Status'|t }}: {{ result_data.status }}</div>
+
+  {% if result_data.output %}
+    <div>{{ 'Summary'|t }}</div>
+    <p>{{ result_data.output.summary }}</p>
+
+    <div>{{ 'Full Text'|t }}</div>
+    <div class="full-text-container">
+      <textarea id="full-text" rows="10" readonly>{{ result_data.output.text }}</textarea>
+      <button id="copy-button" onclick="copyToClipboard()">{{ 'Copy to Clipboard'|t }}</button>
+    </div>
+
+    {% if result_data.output.sentence_level_timestamps %}
+      <h2>{{ 'Sentence Level Timestamps'|t }}</h2>
+      <ul>
+      {% for sentence in result_data.output.sentence_level_timestamps %}
+        <li>{{ sentence.text }} ({{ sentence.start }} - {{ sentence.end }})</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if result_data.output.srt_content %}
+      <h2>{{ 'SRT Content'|t }}</h2>
+      <pre>{{ result_data.output.srt_content }}</pre>
+    {% endif %}
+
+    {% if result_data.output.srt_translation %}
+      <h2>{{ 'SRT Translation'|t }}</h2>
+      {% for language, translation in result_data.output.srt_translation %}
+        <h3>{{ language }}</h3>
+        <pre>{{ translation }}</pre>
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    <p>{{ 'No output data available.'|t }}</p>
+  {% endif %}
+{% else %}
+  <p>{{ 'No result data available.'|t }}</p>
+{% endif %}
+
+<script>
+function copyToClipboard() {
+  var copyText = document.getElementById("full-text");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  document.execCommand("copy");
+}
+</script>
+
+<style>
+.full-text-container {
+  margin-bottom: 20px;
+}
+#full-text {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#copy-button {
+  display: block;
+}
+</style>

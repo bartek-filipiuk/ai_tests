@@ -1,0 +1,25 @@
+autobloger_ai.settings:
+  type: config_object
+  label: 'AutoblogerAI settings'
+  mapping:
+    text_ai_provider:
+      type: string
+      label: 'Text generation provider'
+    text_ai_model:
+      type: string
+      label: 'Text generation model'
+    image_model:
+      type: string
+      label: 'Image generation model'
+    content_type:
+      type: string
+      label: 'Content type'
+    image_field:
+      type: string
+      label: 'Image field'
+    text_field:
+      type: string
+      label: 'Text field'
+    together_api_key:
+      type: string
+      label: 'Together API Key'

@@ -1,0 +1,22 @@
+uuid: b75f2ed1-00db-44b4-bbc6-8fdcfd7abc08
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.prompts
+id: node.prompts.promote
+field_name: promote
+entity_type: node
+bundle: prompts
+label: 'Promowany na stronie głównej'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

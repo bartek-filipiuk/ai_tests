@@ -1,0 +1,20 @@
+uuid: 8a4bb781-afec-4827-8623-6a4bbc0beca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_idea_starter
+id: node.social_idea_starter.uid
+field_name: uid
+entity_type: node
+bundle: social_idea_starter
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

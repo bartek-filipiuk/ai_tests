@@ -1,0 +1,32 @@
+text_ai_provider: openai
+text_ai_model: gpt-4o
+image_model: black-forest-labs/FLUX.1.1-pro
+content_type: article
+image_field: field_image
+text_field: body
+together_api_key: 79394aff7edca9a8659c0c0268feeb2cd4981c025b16cbe175fa357d92ef94fb
+text_ai_configuration:
+  max_tokens: 4096
+  temperature: 1.0
+  frequency_penalty: 0
+  presence_penalty: 0
+  top_p: 1.0
+blog_language: pl
+blog_subjects:
+  - "Na podstawie trendów rynkowych przygotuj artykuł analizujący, jak AI może pomóc małym firmom w automatyzacji procesów rekrutacji i onboardingu nowych pracowników. Zobrazuj to lekką historią przedsiębiorcy, który zaoszczędził czas dzięki AI, unikając szczegółów technicznych.\r"
+  - "Bazując na aktualnych danych rynkowych, przygotuj artykuł pokazujący, jak AI może zautomatyzować proste zadania administracyjne w małych firmach, np. zarządzanie kalendarzem, odpowiadanie na standardowe e-maile czy przypomnienia. Przedstaw korzyści w formie opowieści, unikając technicznych detali.\r"
+  - "Na podstawie danych rynkowych przygotuj artykuł badający, jak małe firmy mogą wykorzystać AI do automatyzacji analizy danych sprzedażowych, np. w celu zidentyfikowania najlepiej sprzedających się produktów lub prognozowania trendów. Zrób to w lekkim stylu storytellingu, bez wdawania się w techniczne szczegóły.\r"
+  - "Bazując na bieżących trendach rynkowych, przygotuj artykuł analizujący, jak AI może pomóc małym firmom w automatyzacji tworzenia i wysyłki newsletterów. Opisz, jak jednoosobowa firma może zyskać czas i trafność w komunikacji dzięki temu narzędziu, unikając technicznych aspektów\r"
+  - "Na podstawie danych z wyszukiwań przygotuj artykuł o tym, jak małe firmy mogą automatyzować generowanie treści marketingowych przy pomocy AI, np. do ulotek, opisów produktów czy postów w social media. Zrób to w formie historii, w której przedsiębiorca odkrywa, że treści mogą pisać się same.\r"
+  - "Bazując na trendach rynkowych przygotuj artykuł analizujący, jak AI może pomóc małym firmom w automatyzacji obsługi zamówień online – od potwierdzeń e-mailowych po przewidywanie terminów dostawy. Przedstaw to jako lekką opowieść, unikając technicznych szczegółów.\r"
+run_on_every_cron: 1
+schedule_type: weekly
+schedule_hour: '9'
+schedule_min_interval: ''
+schedule_max_per_week: ''
+use_perplexity_search: 1
+perplexity_model: llama-3.1-sonar-small-128k-online
+schedule_days_week: {  }
+perplexity_prompt: "[Instruction]\r\nSearch the newest, confirmed and informative complex informations about the topic: \"[User Subject]\".\r\n\r\n[Context]\r\nI need the most recent and relevant information on this topic to assist in creating a detailed blog post. Focus on key points, statistics, and new developments related to the subject.\r\n\r\n[Output Format]\r\nInclude sources at the bottom.\r\nWrite in paragraphs, do not use numbered lists.\r\nEach paragraph could have subtitle."
+openai_prompt: "You are a professional writer tasked with creating a high-quality blog post on the topic: \"[User Subject]\".\r\n\r\nYour response must be a valid JSON array with exactly this structure:\r\n[{\r\n  \"title\": \"The blog post title\",\r\n  \"title_english\": \"English version of blog title\",\r\n  \"content\": \"The main blog post content\",\r\n  \"links\": []\r\n}]\r\n\r\ntitle need to be:\r\nengaging, make it short, catchy, and to the point. Use strong keywords and elements of intrigue that will entice the reader to click and read the article.\r\n\r\nlinks need to be grabberd from [Citations]\r\n\r\n[Context]\r\nUtilize the following up-to-date information to enrich the blog post with our writing style.\r\nYou can be inspired by formatting also, use tables and bullet/number lists if presented in this data.\r\n\r\n[Perplexity Information]\r\n[Citations]\r\n\r\n[Instructions]\r\n\r\nCombine provided information with existing knowledge if possible and reasonable.\r\nInclude detailed explanations, examples, and insights.\r\nCreate medium-long blog posts.\r\n\r\n1. Writing style\r\n\r\nCreate a short TL;DR at the beginning which will be a short summary of a blog post.\r\nKeep your tone casual.\r\nUse simple words.\r\nIntroduce humor, be direct in your texts and you can sometimes make a joke in the right place.\r\nAddress the reader in the first person.\r\nDo not try to convince directly, but do it through storytelling and witty language.\r\n\r\n2. Formatting Suggestions\r\n\r\nSpecify expected HTML tags for different content elements.\r\nEmphasize using lists and headings where needed.\r\nEncourage the use of \"<p>\" for standard text.\r\nIf you split text into section then use subtitle for section if possible.\r\n\r\n3. Instruction\r\n\r\nCombine provided information with your knowledge.\r\nInclude detailed explanations, examples, and insights.\r\n\r\n4. Additional Tips\r\nEncourage avoiding overly long text blocks by splitting content into paragraphs and sections.\r\n\r\n5. WYSIWYG Editor Considerations\r\nGenerate basic, clean HTML compatible with editors like CKEditor.\r\nAvoid complex inline styles or custom tags that may not be supported.\r\n"
+image_prompt: "Generate an ultra-realistic picture that represents the blog subject: \"[User Subject]\".\r\n\r\n[Instructions]\r\n- Focus on visualize a main concepts of blog post\r\n- Realistic pictures, simple as possible\r\n- Use real worls pictures\r\n- No humans\r\n- minimalistic pictures\r\n- Avoid sci-fi or futuristic aesthetics; aim for a realistic and contemporary look\r\n- Incorporate relevant objects, environments, or symbols associated with the topic"

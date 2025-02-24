@@ -1,0 +1,30 @@
+uuid: 7a621661-eaca-48e6-a99e-b90803951d0b
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - node.type.automation
+  module:
+    - text
+id: node.automation.body
+field_name: body
+entity_type: node
+bundle: automation
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - full_html
+    - plain_text
+field_type: text_with_summary

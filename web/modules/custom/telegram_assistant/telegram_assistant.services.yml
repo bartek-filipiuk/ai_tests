@@ -1,0 +1,14 @@
+services:
+  telegram_assistant.telegram:
+    class: Drupal\telegram_assistant\Service\TelegramService
+    arguments: ['@http_client', '@config.factory', '@logger.factory']
+  telegram_assistant.bot_manager:
+    class: Drupal\telegram_assistant\Service\TelegramBotManager
+    arguments:
+      - '@http_client'
+      - '@entity_type.manager'
+      - '@logger.factory'
+      - '@config.factory'
+  telegram_assistant.thread_manager:
+    class: Drupal\telegram_assistant\Service\ThreadManager
+    arguments: ['@database', '@logger.factory']

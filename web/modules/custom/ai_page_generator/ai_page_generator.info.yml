@@ -1,0 +1,9 @@
+name: 'AI page generator'
+type: module
+description: 'Generate whole pages based on JSON input.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:node
+  - drupal:media
+  - paragraphs:paragraphs

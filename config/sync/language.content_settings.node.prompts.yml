@@ -1,0 +1,11 @@
+uuid: f9f8de96-5590-4825-b8be-03ac27900f92
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.prompts
+id: node.prompts
+target_entity_type_id: node
+target_bundle: prompts
+default_langcode: site_default
+language_alterable: false

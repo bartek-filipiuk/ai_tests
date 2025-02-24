@@ -1,0 +1,18 @@
+uuid: 320da1e9-6ac0-4695-b1c5-982d7cb7ea44
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_idea_starter
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.social_idea_starter
+target_entity_type_id: node
+target_bundle: social_idea_starter
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,25 @@
+uuid: b4b4ce47-3829-4285-83be-8a966c9e4de2
+langcode: pl
+status: true
+dependencies:
+  config:
+    - system.menu.sidebar
+  module:
+    - system
+  theme:
+    - oba_theme
+id: oba_theme_sidebar
+theme: oba_theme
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:sidebar'
+settings:
+  id: 'system_menu_block:sidebar'
+  label: Sidebar
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

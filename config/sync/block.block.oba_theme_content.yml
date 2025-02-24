@@ -1,0 +1,22 @@
+uuid: 578c0ec4-78dc-4543-8cf7-cc5cfd3b3bf0
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oba_theme
+_core:
+  default_config_hash: KCdi3IqZk8MoB22x1uYjFAeRq5dOLslBC70y9Uwm0xE
+id: oba_theme_content
+theme: oba_theme
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Zawartość główna'
+  label_display: '0'
+  provider: system
+visibility: {  }

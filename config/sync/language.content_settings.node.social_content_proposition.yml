@@ -1,0 +1,18 @@
+uuid: 551076b6-ddf4-4651-91e6-974235914ab2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_content_proposition
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.social_content_proposition
+target_entity_type_id: node
+target_bundle: social_content_proposition
+default_langcode: site_default
+language_alterable: false

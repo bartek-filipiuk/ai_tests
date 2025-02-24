@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for AutoblogerAI module.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function autobloger_ai_cron() {
+  \Drupal::service('autobloger_ai.queue_service')->addCronTasks();
+}

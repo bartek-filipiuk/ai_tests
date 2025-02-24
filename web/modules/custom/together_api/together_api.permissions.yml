@@ -1,0 +1,4 @@
+administer together api:
+  title: 'Administer Together API settings'
+  description: 'Allow access to Together API configuration and test page.'
+  restrict access: true

@@ -1,0 +1,10 @@
+receipt-upload:
+  version: 1.x
+  js:
+    js/receipt-upload.js: {}
+  css:
+    theme:
+      css/receipt-upload.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

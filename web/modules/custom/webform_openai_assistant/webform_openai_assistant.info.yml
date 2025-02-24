@@ -1,0 +1,5 @@
+name: 'Webform OpenAI Assistant Handler'
+type: module
+description: 'Comunication between webforms and OpenAI assistant API'
+package: Custom
+core_version_requirement: ^10 || ^11

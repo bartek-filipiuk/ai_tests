@@ -1,0 +1,40 @@
+Salad api
+
+1. Szkielet modułu do drupal 10 znajduje się w salad_integration
+
+2. Stwórz formularz konfiguracyjny pod adresem admin/config/services/salad/settings
+gdzie będzie pole do wpisania: 
+- klucza api 
+- api url
+- webhook url
+
+wartości zapisz w konfiguracji yml.
+
+3. Stworz drugi formularz pod adresem admin/config/services/salad/transcription
+gdzie będzie można zrobić upload pliku z rozszerzeniami
+Audio: AIFF, FLAC, M4A, MP3, WAV Video: MKV, MOV, WEBM, WMA, MP4, AVI
+maksymalnie 2GB
+
+4. Zrob integracje z Salad API.
+Stwórz klase klienta w której będa endpointy.
+Dane do poąłczenia z api pobierz z konfiguracji z formularza settings.
+Dokumentacja do api znajduje sie w plikach md załączonych do opisu.
+language_code to pl
+translate to eng
+srt_translation to en
+
+Z api połącz się za pomocą http client która znajduje się w drupalu 10.
+
+Co sekunde Sprawdzaj tez jaki jest status odpowiedzi i prezentuj go w na stronie w odpowiednim polu (odczyt)
+
+Jeżeli status jest sukces to 
+- pobierz text z sentence_level_timestamps i uzupełnij pole tekstowe tak aby mozna było skopiowac tekst
+- Jeżeli sentence_level_timestamps nie występuje w odpowiedzi to w odpowiedzi wyswietl link do pobrania, ktory znajduje się w output -> url
+
+Jeżeli status jest failed to napisz ze coś poszło nie tak.
+
+
+
+
+
+

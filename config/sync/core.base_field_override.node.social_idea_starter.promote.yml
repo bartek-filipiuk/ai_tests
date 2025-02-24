@@ -1,0 +1,22 @@
+uuid: cf672783-692a-425a-839a-17646863d19a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_idea_starter
+id: node.social_idea_starter.promote
+field_name: promote
+entity_type: node
+bundle: social_idea_starter
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

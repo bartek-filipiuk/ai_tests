@@ -1,0 +1,8 @@
+uuid: b6181942-3979-4d7d-857d-369f042a5795
+langcode: pl
+status: true
+dependencies: {  }
+id: sidebar
+label: Sidebar
+description: ''
+locked: false

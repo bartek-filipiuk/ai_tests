@@ -1,0 +1,10 @@
+uuid: 517e9454-eb45-4ed9-9008-0be2ae0d99b0
+langcode: pl
+status: true
+dependencies: {  }
+id: fridger
+label: Fridger
+bot_token: '7657876756:AAE4mveHc2D5waMnlH1RpSmJoH-fHZ-kBIw'
+webhook_url: 'https://ee73-195-206-112-203.ngrok-free.app/telegram/webhook'
+created: 1732222362
+changed: 1732306761

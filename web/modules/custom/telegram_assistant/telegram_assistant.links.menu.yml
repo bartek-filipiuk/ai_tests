@@ -1,0 +1,11 @@
+telegram_assistant.settings:
+  title: 'Telegram Assistant'
+  parent: system.admin_config_services
+  description: 'Configure Telegram Assistant settings'
+  route_name: telegram_assistant.settings
+
+entity.telegram_bot.collection:
+  title: 'Telegram Bots'
+  parent: telegram_assistant.settings
+  description: 'Manage Telegram Bots'
+  route_name: entity.telegram_bot.collection
