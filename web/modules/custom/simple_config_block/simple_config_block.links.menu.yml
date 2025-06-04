@@ -1,0 +1,5 @@
+simple_config_block.settings:
+  title: 'Simple Config Block'
+  description: 'Ustawienia przykładowego modułu'
+  route_name: simple_config_block.settings
+  parent: system.admin_config_development

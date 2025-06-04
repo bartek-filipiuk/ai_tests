@@ -1,0 +1,6 @@
+name: 'Simple Config Block'
+type: module
+description: 'Przykładowy moduł z formularzem konfiguracji i blokiem.'
+package: Custom
+core_version_requirement: ^10 || ^11
+configure: simple_config_block.settings
