@@ -1,0 +1,4 @@
+services:
+  bad_module.service:
+    class: Drupal\bad_module\BadModuleService
+    arguments: ['@config.factory', '@logger.factory', '@messenger', '@string_translation', '@cache.default']

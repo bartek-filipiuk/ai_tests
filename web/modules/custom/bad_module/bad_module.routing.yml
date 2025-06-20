@@ -1,0 +1,7 @@
+bad_module.admin_settings:
+  path: '/admin/config/bad-module/settings'
+  defaults:
+    _form: 'Drupal\bad_module\Form\AdminSettingsForm'
+    _title: 'Bad Module Settings'
+  requirements:
+    _permission: 'administer site configuration'
