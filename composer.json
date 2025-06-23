@@ -43,7 +43,7 @@
         "drupal/symfony_mailer": "^1.5",
         "drupal/webform": "6.3.x-dev@dev",
         "drupal/webform_score": "^2.3",
-        "drush/drush": "^13.2"
+        "drush/drush": "^13.5"
     },
     "conflict": {
         "drupal/drupal": "*"
