@@ -8,3 +8,4 @@ docs
 .windsurfrules
 web/sites/default/settings.prod.php
 .idea
+vendor
