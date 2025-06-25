@@ -7,3 +7,6 @@ config/sync/key.key.*
 docs
 .windsurfrules
 web/sites/default/settings.prod.php
+
+.idea
+vendor
