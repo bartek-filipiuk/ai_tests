@@ -1,7 +1,7 @@
 # Drupal 10 Code Review Guidelines
 
 ## Overview
-This module intentionally contains poor coding practices for demonstration purposes. When reviewing, focus on identifying these anti-patterns and suggesting Drupal 10 best practices instead.
+Check the code if contains good coding practices for Drupal 10. When reviewing, focus on identifying these anti-patterns and suggesting Drupal 10 best practices instead.
 
 
 ## Key Issues to Identify
@@ -25,7 +25,7 @@ Identify places where input data is used without proper validation.
 Look for improper translation handling (global `t()` function or direct translation service calls).
 
 ### Code Structure
-Identify missing strict type declarations and other PHP 8 features.
+Identify missing strict type declarations and other PHP 8.3+ features.
 
 ### Configuration Files
 Check for incomplete or improperly structured YAML files.
