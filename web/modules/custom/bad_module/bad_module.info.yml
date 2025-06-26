@@ -1,0 +1,5 @@
+name: 'bad_module'
+type: module
+description: 'This is bad'
+package: Custom
+core_version_requirement: ^10 || ^11
